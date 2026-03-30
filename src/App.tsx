@@ -331,7 +331,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">Telefono</p>
-                <p className="text-lg font-serif">123 456 789</p>
+                <a href="tel:1234567890" className="text-lg font-serif hover:text-gold transition-colors">1234567890</a>
               </div>
             </div>
 
@@ -412,6 +412,10 @@ const Footer = () => {
           <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
             L'eccellenza della tradizione italiana nel cuore di Milano. Oltre 20 anni di passione per la cucina e la pizza autentica.
           </p>
+          <a href="tel:1234567890" className="flex items-center gap-2 text-gold hover:text-white transition-colors w-fit">
+            <Phone size={16} />
+            <span className="text-sm font-medium tracking-wider">1234567890</span>
+          </a>
           <div className="flex gap-4">
             <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gold hover:border-gold transition-all">
               <Instagram size={18} />
